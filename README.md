@@ -118,17 +118,17 @@ Using these sources and doing some further investigations I managed to identify 
 ### 1. voltages
 |Motherboard | SIO | lm-sensor | NCT reference | NCT description| ASRock utility | Min | Max |
 |--|--|--|--|--|--|--|--|
-| Vcore | NCT6791D | in0 | index80 | CPUVCORE | CPU_INPUT_V | 0.16 | 1.48 |
+| Vcore | NCT6791D | in0 | index80 | CPUVCORE | CPU_INPUT_V | 0.9 | 2.1 |
 | +5V | NCT6791D | in1 | index81 | VIN1 | P5P0_V | 4.5 | 5.5 |
 | ignored | NCT6791D | in2 | index82 | AVSB | none |  |  |
 | +3.3V | NCT6791D | in3 | index83 | 3VCC | P3P3_V | 2.98 | 3.63 |
 | CPU PLL2 | NCT6791D | in5 | index85 | n/a | SIO6_V | 0.936 | 2.613 |
-| PCH +1.0V | NCT6791D | in6 | index86 | VIN4 | SIO3_V | 0.95 | 1.5 |
+| PCH +1.0V | NCT6791D | in6 | index86 | VIN4 | SIO3_V | 0.9 | 1.5 |
 | ignored | NCT6791D | in7 | index87 | 3VSB | none | | |
 | ignored | NCT6791D | in8 | index88 | VBAT | none | | |
 | ignored | NCT6791D | in9 | index89 | VTT | none | | |
 | ignored | NCT6791D | in10 | index8a | VIN5 | none | | |
-| VCCIO | NCT6791D | in11 | index8b | VIN26 | SIO4_V | 0.84 | 2.0 |
+| VCCIO | NCT6791D | in11 | index8b | VIN26 | SIO4_V | 0.85 | 2.0 |
 | DRAM | NCT6791D | in12 | index8c | VIN2 | SIO1_V | 1.0 | 2.3 |
 | DRAM VPP | NCT6791D | in13 | index8d | VIN3 | SIO2_V | 2.4 | 2.8 |
 | VCCSA | NCT6791D | in14 | index8e | VIN7 | SIO5_V | 0.95 | 2.0 |
