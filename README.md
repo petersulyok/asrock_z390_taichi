@@ -1,11 +1,13 @@
-
+﻿
 # asrock_z390_taichi
 [Lm-sensors](https://github.com/lm-sensors/lm-sensors) configuration for [ASRock Z390 Taichi](https://www.asrock.com/mb/Intel/Z390%20Taichi/index.asp) motherboards on Linux.
 
-**Warning:** this configuration is hardware dependent, can work properly only on this motherboard! You have to modify the configuration if you want to use it on different hardware. All vendors and motherboards are using SIO chips differently. 
+**Warning:** this configuration is hardware dependent, can work properly only on this motherboard! You have to modify the configuration if you want to use it on different motherboard. 
+
+Update: The configuration file has been added to [lm-sensors project](https://github.com/lm-sensors/lm-sensors).
 
 ## The motherboard
-ASRock installed two SIO  (Super I/O) chips on Z390 Taichi motherboard to handle multiple fans and voltage lines.
+ASRock used two super I/O (SIO) chips on Z390 Taichi motherboards to handle multiple fans, temperature and voltage lines:
  - primary SIO is **Nuvoton NCT6791D**
  - secondary SIO is **Nuvoton NCT5567D**
 
@@ -169,7 +171,7 @@ These assignments were checked manually on the motherboard. Using only one fan i
 Please note that CPU sensor is located on the motherboard and it always shows lower temperature than the core temperature of the CPU (use `coretemp` module if you need internal temperature values). On the other hand I did not find information about the meaning of the following entities (NCT6791D: AUXTIN0/PECI Agent 0, NCT5567D: AUXTIN0) they are ignored actually.
 
 ## The new configuration
-You can copy this new configuration file (`asrock_z390_taichi.conf`) to folder `/etc/sensors.d/` and the output of the `sensors` command will look like this:
+You can copy this new configuration file (`Z390_Taichi.conf`) to folder `/etc/sensors.d/`, restart `lm-sensor` service and the output of the `sensors` command will look like this:
 
     nct6791-isa-0290
     Adapter: ISA adapter
