@@ -4,7 +4,9 @@
 
 **Warning:** this configuration is hardware dependent, can work properly only on this motherboard! You have to modify the configuration if you want to use it on different motherboard. 
 
-Update: The configuration file has been added to [lm-sensors project](https://github.com/lm-sensors/lm-sensors).
+Updates:
+  - [June 10, 2022]: The configuration file has been forwarded to [lm-sensors project](https://github.com/lm-sensors/lm-sensors).
+  - [August 28, 2023]: In the queue, waiting for merge
 
 ## The motherboard
 ASRock used two super I/O (SIO) chips on Z390 Taichi motherboards to handle multiple fans, temperature and voltage lines:
