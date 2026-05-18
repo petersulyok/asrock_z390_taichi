@@ -7,6 +7,7 @@
 Updates:
   - [June 10, 2022]: The configuration file has been forwarded to [lm-sensors project](https://github.com/lm-sensors/lm-sensors).
   - [August 28, 2023]: In the queue, waiting for merge
+  - [April, 2026]: Merged to main branch of [lm-sensors project](https://github.com/lm-sensors/lm-sensors).
 
 ## The motherboard
 ASRock used two super I/O (SIO) chips on Z390 Taichi motherboards to handle multiple fans, temperature and voltage lines:
